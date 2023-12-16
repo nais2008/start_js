@@ -57,13 +57,13 @@ let m = 43;
 let m1 = 27;
 let m2 = 2;
 
-let m_sum = (s + s1 + s2) / 3;//24
+let m_sum = (m + m1 + m2) / 3;//24
 
 let d = 7;
 let d1 = 24;
 let d2 = 72;
 
-let d_sum = (s + s1 + s2) / 3;//34
+let d_sum = (d + d1 + d2) / 3;//34
 
 if (s_sum > m_sum){
     if (s_sum > d_sum){
@@ -73,14 +73,16 @@ if (s_sum > m_sum){
     }else{
         console.log('d');
     }
-}else if (m_sum > s_sum){
-    if (m_sum > d_sum){
-        console.log('m');
-    }else if(m_sum === d_sum){
-        console.log('md');
-    }else{
+}else if(d_sum > m_sum){
+    if(s_sum === d_sum){
+        console.log('md')
+    }
+    else {
         console.log('d');
     }
-}else{
-    console.log('nich');
+}else if (s_sum === d_sum && s_sum === m_sum){
+    console.log('nich')
+}
+else{
+    console.log('m')
 }
