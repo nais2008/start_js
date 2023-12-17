@@ -12,38 +12,38 @@
 
 // Второй урок по JS
 
-// let mark = 3;
+let mark = 3;
 
-// if ((mark == 2) || (mark == 3)){
-//     console.log('вы получили плохую оценку');
-// }else if ((mark == 4) || (mark == 5)){
-//     console.log('вы получили хоршую оценку');
-// }else{
-//     console.log('кажется, кто-то остался без майнкрафта на наделю');
-// }
+if ((mark == 2) || (mark == 3)){
+    console.log('вы получили плохую оценку');
+}else if ((mark == 4) || (mark == 5)){
+    console.log('вы получили хоршую оценку');
+}else{
+    console.log('кажется, кто-то остался без майнкрафта на наделю');
+}
 
 // ------------------------------------------------------
 
-// let num = 0;
+let num = 0;
 
-// switch (num){
-//     case 0:
-//         console.log('это 0');
-//         break;
+switch (num){
+    case 0:
+        console.log('это 0');
+        break;
 
-//         case 1:
-//             console.log('это 1');
-//             break;
+        case 1:
+            console.log('это 1');
+            break;
 
-//         case 2:    
-//         case 3:
-//             console.log('это 2 или 3');
-//             break;
+        case 2:    
+        case 3:
+            console.log('это 2 или 3');
+            break;
 
-//         default:
-//             console.log('неизвестное число')
-//             break;
-// }
+        default:
+            console.log('неизвестное число')
+            break;
+}
 
 // homework 
 
@@ -81,8 +81,31 @@ if (s_sum > m_sum){
         console.log('d');
     }
 }else if (s_sum === d_sum && s_sum === m_sum){
-    console.log('nich')
+    console.log('nich');
 }
 else{
-    console.log('m')
+    console.log('m');
 }
+
+// lesson 3
+
+function imt(ves, rost){
+    return ves / (rost * 2);
+}
+console.log(imt(60, 1.6));
+
+// -----------------------------------------------------------
+
+let a = ['Германия', 'РФ', 'США', 'Англия', 'Мексика'];
+console.log(a);
+a.push('Велиобритания', 'Китай');
+console.log(a);
+a.splice(2, 2);
+console.log(a);
+a.unshift('ЮАР');
+console.log(a);
+a[1] = 'Япония';
+console.log(a);
+a.forEach((item, key)=> {
+    console.log(item, key)
+});
