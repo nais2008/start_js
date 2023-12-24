@@ -109,3 +109,42 @@ console.log(a);
 a.forEach((item, key)=> {
     console.log(item, key)
 });
+
+//lesson 4
+
+let komp = {
+    videokarta: 'GTX 1080',
+    processor: 'i5-10400f',
+    operatinai: '8gb',
+};
+console.log(komp.processor);
+let telephone = {
+    brend: 'Сяоми',
+    marka: 'POCO X3 PRO',
+    operativnai: '6gb',
+    ssd: '128gb'
+};
+console.log(telephone.operativnai);
+let komp_app = {
+    klava: 'True',
+    mouse: 'True',
+    kolonki: 'False',
+    naush: 'True',
+    monitore: '2x True'
+};
+console.log(komp_app.kolonki);
+
+let user = {
+    name: 'FIO',
+    dr: '20.20.2020',
+    brauzer: 'Chrome',
+    sey_hello(){
+        console.log('Привет', this.name);
+    },
+    dat_brauser(){
+        console.log('Браузер юзера: ', this.brauzer);
+    }
+};
+
+user.dat_brauser()
+user.sey_hello()
